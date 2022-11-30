@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/re_usable/style.css">
+    <link rel="stylesheet" href="../css/pix.css">
+    <link rel="icon" href="../img/icone.jpg" type="image/png">
+    <title>Mussi Bank- Pix</title>
+</head>
+<body>
+
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
+
+                    <a class="back" href="account.html"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-pix">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Pix</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-options">
+                            <p>Para prosseguir, clique abaixo</p>
+                            <button id="pag-pix">Realizar pagamento</button>
+                        </div>
+                    </div>
+
+                    <div class="input-chave">
+                        <p>Insira uma chave PIX</p>
+                        <hr>
+                        <input id="chave" type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" maxlength="30" required>
+                        <button id="next-step">Prosseguir</button>
+                    </div>
+
+
+
+                    <div class="enviar-pag">
+                        <p class="p-head">Enviar pagamento</p>
+                        <!-- <input type="text" placeholder=" Insira o valor"> -->
+                        <!-- <hr> -->
+                        <div class="input-valor">
+                            <p>Valor desejado</p>
+                            <input id="input-valor" onkeypress="return onlyNumberKey(event)" type="text" placeholder=" Ex: R$ 20,00" maxlength="4" required>
+                        </div>
+                        <hr>
+                        <div class="item">
+                            <p>Nome do Beneficiário</p>
+                            <p id="beneficiado">Lucilene Aparecida </p>
+                        </div>
+                        <div class="item">
+                            <p>Agência</p>
+                            <p id="agencia">***.000.000-**</p>
+                        </div>
+                        <div class="item">
+                            <p>Banco</p>
+                            <p id="banco">Neon</p>
+                        </div>
+                        <hr>
+                        <input type="text" placeholder=" Descrição (opicional)">
+                        <div class="last-part">
+                            <div class="option-form">
+                                <p>Forma de pagamento</p>
+                                <p>Saldo: <span id="saldo">R$ 1000,00</span></p>
+                            </div>
+                            <button id="pagar-pix">Pagar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="confirm">
+                        <p><i class='bx bxs-check-circle'></i>PIX realizado com sucesso!</p>
+                        <hr>
+                        <button onclick="window.location.href='./account.html';">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/pix.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

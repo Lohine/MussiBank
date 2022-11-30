@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Mussi Bank</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/qbj7kce.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img class="logo-nav" src="img/logo.png">
+        <div class="search-bar">
+            <form class="form-search" id="searchFormHeader" autocomplete="off" method="get" action="/busca">
+                <button class="button-search greenBack" type="button" id="btn-busca"> buscar <img class="search-icon" src="img/search-black.svg" width="18" height="18"> </button>
+                <input type="text" class="input-search ac_input" id="txtBuscaPrincipal" itemprop="query-input" name="busca" data-placeholder="Pesquise aqui..." autocomplete="off" placeholder="Pesquise aqui...">
+            </form>
+        </div>
+        <ul class="nav-list">
+          <li><a href="paginas/">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="paginas/cadastro.html">Para você</a></li>
+          <li><a href="paginas/login.html">Entre</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="background">
+        <img src="img/card5.jpg">
+    </div>
+
+    <main>
+      <section class="introduction">
+        <div class="container-introduction">
+          <div class="envelope-introduction">
+            <h1>Mussi, a conta digital feita para os brasileiros trabalhadores</h1>
+            <p>Leve com você onde for: Cartão de Crédito, Débito, Empréstimo, Investimentos, Cashback e muito mais!</p>
+            <button>Abra sua conta</button>
+            <li><a href="paginas/cadastro.html">.</a></li>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="three-items">
+        <div class="container-three-items">
+          <div class="envelope-three-items">
+            <div class="item">
+              <img src="img/aprimorar-icon.png">
+              <h1>No Mussi todo mundo ganha cashback</h1>
+              <p>Tudo o que você procura em um só lugar. Aqui você ganha o cashback, direto na sua conta, seja ela Mussi ou não. É fácil, rápido, e você sai ganhando sempre!</p>
+            </div>
+            <div class="item">
+              <img src="img/globe-icon.png">
+              <h1>Empréstimos e Financiamento</h1>
+              <p>Do empréstimo pessoal ao financiamento da sua casa, descomplicamos o seu crédito com um jeito simples de simular e contratar e taxas que você pode pagar.</p>
+            </div>
+            <div class="item">
+              <img src="img/clock-icon.png">
+              <h1>Mussi Invest</h1>
+              <p>Seu dinheiro, suas
+                escolhas. Invista do
+                seu jeito!</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+     
+
+      <footer class="footer" id="contato">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>Precisa de ajuda?</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Canais de Atendimento</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Negocie sua divída</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Pra você
+                    </h4>
+                    <ul>
+                        <li><a href="cursos.html">Conta Digital Pessoa Física</a></li>
+                        <li><a href="survey.html">Cartão de Crédito</a></li>
+                        <li><a href="forum.html">Conta Digital Pessoa Juridíca</a></li>
+                        <li><a href="forum.html">Conta Digital MEI</a></li>
+                        <li><a href="forum.html">Seguros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Fale com a gente</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria: 0800 543216</a></li>
+                        <li><a href="#">Capitais: 3003-0703</a></li>
+                        <li><a href="#">SAC: 0800 65321</a></li>
+                        <li><a href="#" class="emailDebi">Email: mussibank@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                  <h4>Siga nossas redes</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+
+                
+        </div>
+
+  
+     
+      
+
+    <script src="js/navbar.js"></script>
+    <script>
+      /*gsap.from('.item', {
+        scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"
+        },
+        y: -100,
+        opacity: 0
+      });*/
+
+      gsap.from('.item', {scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"},
+          y: -150, 
+          stagger: 0.2, 
+          opacity: 0,
+          duration: 0.7});
+
+      gsap.from('.plan', {scrollTrigger:{
+        trigger: '.item',
+        start: "center bottom"
+      },
+      x: 100,
+      stagger: 0.2,
+      opacity: 0,
+      duration: 1})
+    </script>
+  </body>
+</html>

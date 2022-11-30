@@ -1,0 +1,622 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #181820;
+}
+  
+  
+header {
+    background: yellow;    
+    /*height: 70vh;*/
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imgLogo1{
+    height: 150px;
+}
+  
+.menu li {
+    margin-left: 10px;
+    
+}
+
+.divSearch {
+   display: flex;
+}
+
+.menu li .divSearch .inputSearch{
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 68px;
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 63px;
+    outline: none;
+}
+
+.menu li .divSearch .inputSearch:focus{
+    background-color: #ffff48;
+}
+
+.divSearch i{
+    opacity: 70%;
+    position: relative;
+    top: 68px;
+    margin-right: 20px;
+    transform: translateX(-120%);
+}
+
+.menu li a {
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+.menu li .options{
+    margin-top: 68px;
+}
+
+.menu li .fa-user-circle{
+    margin-top: 68px;
+    margin-left: 0;
+}
+
+.menu li i:hover{ 
+    cursor: pointer;
+}
+
+.menu li button{
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 63px;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+.menu li .options:hover {
+    background-color: #E8E800;
+}
+
+.menu li button:hover{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffff07;
+    transform: translateX(-10%) translateY(-10%);
+    transition: 0.5s;
+}
+
+header > .sectionConteudoHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+    
+    text-align: justify;
+    max-width: 1150px;
+    margin-top: 30px;
+    padding: 20px;
+    color: black;
+    
+}
+
+
+header .sectionConteudoHeader .container {
+    width: 50%;
+}
+
+header .sectionConteudoHeader .container h1{
+    font-size: 3.0rem;
+    text-shadow: #00000056 2px 3px;
+    margin-bottom: 30px;
+}
+
+header .sectionConteudoHeader .imgLampadaCerebro {
+    height: 460px;
+    transform: translateY(-20%);
+}
+
+
+
+main {
+    min-width: 300px;
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 50px;
+    color: white;  
+    
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+main h1 {
+    text-shadow: #eeff0057 1px 2px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    
+}
+
+.sectionMain1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sectionMain1 .divFirstBox {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px 0px 0px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 450px;
+    margin-bottom: 50px;
+}
+
+.sectionMain1 .divCursos {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-bottom: 115px;
+    align-self: flex-end;
+}
+
+
+.sectionMain1 .divCursos ul li {
+    margin-bottom: 15px;
+}
+
+main .sectionSurvey {
+    margin-top: 20px;
+    margin-bottom: 130px;
+    /*margin-top: 150px;*/
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.sectionSurvey h2 {
+    margin-bottom: 10px;
+    text-shadow: #eeff0057 2px 3px;
+    font-size: 2.5rem;
+}
+
+.sectionSurvey p {
+    font-size: 1.5rem;
+}
+
+.sectionSurvey div p strong {
+    color: rgb(233, 233, 1);
+    text-shadow: #000000c4 4px 5px;
+    font-size: 50px;
+}
+
+.buttonSurvey {
+    background-color: yellow;
+    box-shadow: #00000056 2px 3px;
+    border: none;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transform: translateY(-25%);
+    transition: 0.5s;
+}
+
+.buttonSurvey:hover {
+    cursor: pointer;
+    background-color: #40404d;
+    border: solid 2.5px yellow;
+    /*box-shadow: rgba(255, 255, 0, 0.589) 1px 2px;*/
+    color: rgb(255, 255, 2);
+    padding: 3px 13px 3px 13px;
+    transition: all 0.5s ease;
+}
+
+
+
+.sectionMain1 .divAssinaturas  {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin-bottom: 115px;
+    align-self: flex-start;
+}
+
+.divAssinaturas .divContainer{
+    min-height: 200px;
+}
+
+.divAssinaturas .divContainer h3 {
+    text-shadow: rgb(175, 175, 71) 1px 2px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.divAssinaturas .divContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divAssinaturas .divContainer ul li {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    background-color: #181820;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+.divAssinaturas .acessarAssinatura  p {
+    color: #181820;
+}
+
+.divAssinaturas .acessarAssinatura  p a{
+    color: rgb(95, 95, 95);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divAssinaturas .acessarAssinatura p a:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+
+.sectionMain1 .divForum {
+    text-align: end;
+    align-self: flex-end;
+    max-width: 500px;
+    padding-right: 70px;
+}
+
+.divForum h2{
+    font-size: 2.7rem;
+    color: yellow;
+    text-shadow: #000000c4 4px 5px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+.divForum p{
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.divForum button {
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.divForum button:hover {
+    color: #181820;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sectionQuemSomos{
+    background-color: white;
+    min-height: 500px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.sectionQuemSomos .geral {
+    padding-top: 30px;
+    margin: auto;
+    max-width: 1150px;
+    
+}
+
+.sectionQuemSomos .geral h3 {
+    font-size: 2.0rem;
+    
+}
+
+.sectionQuemSomos .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0000000e;
+    border-radius: 70px;
+    max-width: 1150px;
+    margin: auto;
+    font-size: 60px;
+    padding: 50px 10px 50px 10px;
+    text-align: justify;
+}
+
+.sectionQuemSomos .container .Leo {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.sectionQuemSomos .container .Pedro {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.sectionQuemSomos .container .Thierry {
+    max-width: 90%;
+    margin: auto;
+}
+
+
+.footer .container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.container .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #282b31;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e9e61e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .emailDebi {
+    text-transform: none;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer-pagamento {
+    padding: 0px 15px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer-pagamento p{
+    width: fit-content;
+    font-size: 1.0rem;
+}
+
+.footer-pagamento div {
+    content: '';
+	left:0;
+    margin-top: 10px;
+	background-color: #e9e61e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 120px;
+}
+
+.footer-pagamento img {
+    width: 400px;
+
+
+}
+
+@media(max-width: 1190px){
+
+    .menu li:nth-child(1){
+        grid-area: logo;
+        
+    }
+    .menu li:nth-child(2){
+        grid-area: pesquisa;
+    }
+
+    .menu li:nth-child(3){
+        grid-area: cursos;
+    }
+    .menu li:nth-child(4){
+        grid-area: contato;
+    }
+    .menu li:nth-child(5){
+        grid-area: entrar;
+    }
+    .menu li:nth-child(6){
+        grid-area: perfil;
+    }
+
+    .menu li:nth-child(7){
+        grid-area: matricule-se;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo logo pesquisa pesquisa pesquisa"
+                        "cursos contato entrar perfil matricule-se";
+        
+    }
+}
+
+@media (max-width: 823px) {
+    .sectionQuemSomos .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .sectionQuemSomos .container .Leo {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-right: none;
+    
+    }
+
+    .sectionQuemSomos .container .Pedro {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-right: none;
+        
+    }
+
+    .sectionQuemSomos .container .Thierry {
+        max-width: 80%;
+        margin: auto;
+        border-right: none;
+        
+    }
+
+}
+@media(max-width: 780px){
+    .sectionConteudoHeader .container {
+        min-width: 90%;
+    }
+    .sectionConteudoHeader .container h1 {
+        text-align: center;
+    }
+    .sectionConteudoHeader .container p{
+      width: 100%;
+      margin-bottom: 100px;
+    }
+    .sectionConteudoHeader .imgLampadaCerebro {
+        height: 300px;
+        transform: translateX(70%);
+    }
+}
+
+
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+    }
+}
+
+@media(max-width: 540px){
+    .sectionConteudoHeader { 
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .imgLampadaCerebro {
+        max-height: 360px;
+    }
+
+    .sectionSurvey p{
+        text-align: left;
+    }
+
+    .footer-pagamento img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .sectionQuemSomos .container {
+        max-width: 80%;
+    }
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/estilos-extrato.css">
+    <link rel="icon" href="../img/icone.jpg" type="image/png">
+    <title>Extrato</title>
+</head>
+<body>
+  
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
+
+                    <a class="back" href="account.html"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-extrato">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Extrato</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-saldo">
+                            <div class="available">
+                                <p>Saldo disponível</p>
+                                <p id="saldo">R$ 1.000,00</p>
+                            </div>
+                            <div class="limit">
+                                <p>Saldo disponível + Limite</p>
+                                <p>R$ 3.500,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="report">
+                        <table>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                            </tr>
+                            <tr>
+                                <td>15/11/2022</td>
+                                <td>Compra na Panificado Hauer</td>
+                                <td class="valor val1">R$ <span class="pos-neg">-</span><span id="quantia">250,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>17/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor val2">R$ <span class="pos-neg">-</span><span id="quantia">300,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>18/11/2022</td>
+                                <td>Compra no Salão de Beleza Belissíma</td>
+                                <td class="valor val3">R$ <span class="pos-neg">-</span><span id="quantia">400,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>19/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor val4">R$ <span class="pos-neg">-</span><span id="quantia">20,00</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>22/11/2022</td>
+                                <td>Compra na Farmácia Panvel</td>
+                                <td class="valor val4">R$ <span class="pos-neg">-</span><span id="quantia">50,00</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>24/11/2022</td>
+                                <td>Compra na Loja Animal Pet</td>
+                                <td class="valor val4">R$ <span class="pos-neg">-</span><span id="quantia">150,00</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>26/11/2022</td>
+                                <td>Compra na Loja Lilica Ripilica</td>
+                                <td class="valor val4">R$ <span class="pos-neg">-</span><span id="quantia">100,00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+  
+    <script src="../js/extrato.js"></script>
+</body>
+</html>

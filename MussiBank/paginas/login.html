@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussi Bank - Login</title>
+    <link rel="stylesheet" href="../css/estilos-login.css">
+    <link rel="icon" href="../img/icone.jpg" type="image/png">
+    <script src="../js/login.js" defer></script>
+    <script src="https://kit.fontawesome.com/360df2e0e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="centralContainer">
+            <div class="card">
+                
+
+                <div class="secaoCima">
+                    <div class="logoCard">
+                        <img src="../img/logo.png" id="logoCard">
+                    </div>
+
+                    
+                    <div class="chip">
+                        <img src="../img/chip.png" id="chipImg">
+                    </div>
+                </div>
+                
+
+                <div class="cardInfo">
+                    <div class="secaoAgencia">
+                        <div class="cardAgencia">
+                            <label>Agência:</label>
+                            <br>
+                            <span id="ccAgencia">0000</span>
+                        </div>
+                        <div class="cardConta">
+                            <label>Conta:</label>
+                            <br>
+                            <span id ="ccConta">0000000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="secaoBaixa">
+                        <div class="nameCC">
+                            <br>
+                            <span id="nomeCC">Amanda Fernandes  </span>
+                        </div>
+
+                        <div class="validadeCC">
+                            <label class="labelCC">
+                                Validade
+                            </label>
+                            <br>
+                            <span id="validadeCC">
+                                04/26
+                            </span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="inputContainer">
+                <div class="field-container">
+                    <label for="agencia">Agencia</label>
+                    <input type="text" id="agencia" maxlength="4" placeholder="4 digitos"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+
+                </div>
+    
+                <div class="field-container">
+                    <label for="conta">Conta</label>
+                    <input type="text" id="conta" maxlength="6" placeholder="6 digitos"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />                </div>
+    
+                <div class="field-container">
+                    <label for="securitycode">Token</label>
+                    <input type="text" id="token" maxlength="8" placeholder="8 digitos"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />                </div>
+                </div>
+                
+            <div class="button">
+                <a href="./perfil.html" id="linkAccount">
+                    <i class="fa-solid fa-arrow-right" id="btn-next"></i>
+                </a>
+            </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

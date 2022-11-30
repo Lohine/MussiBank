@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilos-cadastro.css">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <script src="../js/cadastro.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icone.jpg" type="image/png">
+       
+    <title>Mussi Bank-Cadastro</title>
+</head>
+<body>
+
+    <main class="container">
+        <div class="divAmarelo">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <h2>Cadastro</h2>
+                </td>
+                <td>
+                    <img src="../img/logo.png">
+                </td>
+            </tr>
+        </table>
+        
+        <form action="login.html">
+
+            <div class="input-field">
+                <input type="text" name="username" id="name" placeholder="Digite seu nome completo">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="cpfInput" maxlength="14" placeholder="CPF"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="email" name="email" id="username" placeholder="Digite seu E-mail">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Digite uma senha">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="password" name="confirmpassword" id="password" placeholder="Confirme sua senha">
+                <div class="underline"></div>
+            </div>
+        </div>
+        
+        <div class="input-field">
+            <input type="text" id="telefoneInput" maxlength="11" placeholder="Telefone"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            <div class="underline"></div>
+        </div>
+            
+        
+            <input type="submit" value="Cadastrar">
+        </form>  
+        <div class="divFooter">
+            <span>Já possui um cadastro?</span>
+            <p><a href="login.html">Acessar</a></p>
+        </div>
+    </main>
+    
+    <button class="button-voltar-homepage" onclick="location.href='../index.html'"> Volte para a <strong>página inicial</strong></button>
+    
+</body>
+</html>

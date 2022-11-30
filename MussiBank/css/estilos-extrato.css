@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: black;
+    font-family: 'Jura', sans-serif;
+  }
+  
+  hr {
+    background-color: #515151;
+    opacity: 50%;
+    margin-bottom: 1em;
+    z-index: -9;
+    font-family: 'Jura', sans-serif;
+  }
+  
+  .main-section .container-main .wrapper {
+    margin: 1em;
+  }
+  .main-section .container-main .wrapper .back {
+    display: flex;
+    align-items: center;
+    color: yellow;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: 0.5s;
+  }
+  .main-section .container-main .wrapper .back .bx {
+    font-size: 1.5em;
+  }
+  .main-section .container-main .wrapper .back:hover {
+    color: orange;
+  }
+  .main-section .container-main .wrapper .info-extrato {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-row .label h1 {
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-saldo {
+    padding-left: 1em;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-saldo .available {
+    margin-bottom: 1em;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-saldo .available #saldo {
+    color: #3c8e3b;
+  }
+  .main-section .container-main .wrapper .info-extrato .info-saldo .limit p:nth-of-type(2) {
+    color: #3c8e3b;
+  }
+  .main-section .container-main .wrapper .report {
+    background-color: #fff;
+    padding: 1em;
+  }
+  .main-section .container-main .wrapper .report table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .main-section .container-main .wrapper .report table tr {
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(23, 23, 23, 0.2);
+    text-align: left;
+  }
+  .main-section .container-main .wrapper .report table tr th {
+    padding-bottom: 1em;
+    font-weight: 400;
+  }
+  .main-section .container-main .wrapper .report table tr td {
+    padding: 1em 0.2em;
+    font-size: 0.9em;
+    color: black;
+  }
+  .main-section .container-main .wrapper .report table tr .positivo {
+    color: #3c8e3b;
+  }
+  .main-section .container-main .wrapper .report table tr .negativo {
+    color: red;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .main-section .container-main .wrapper {
+      margin: 1em 2em;
+    }
+    .main-section .container-main .wrapper .back {
+      font-weight: 600;
+    }
+    .main-section .container-main .wrapper .info-extrato {
+      padding: 2em;
+    }
+    .main-section .container-main .wrapper .info-extrato .info-row {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .main-section .container-main .wrapper .info-extrato .info-row button {
+      width: 210px;
+      padding: 10px 0px;
+    }
+    .main-section .container-main .wrapper .info-extrato .info-saldo {
+      margin-left: 1.5em;
+      display: flex;
+    }
+    .main-section .container-main .wrapper .info-extrato .info-saldo .available {
+      margin-bottom: 0em;
+      margin-right: 7em;
+    }
+    .main-section .container-main .wrapper .report {
+      padding: 2em;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .main-section .container-main {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .main-section .container-main .wrapper {
+      width: 100%;
+      max-width: 1130px;
+    }
+    .main-section .container-main .wrapper .info-extrato {
+      padding: 2em 3em;
+    }
+    .main-section .container-main .wrapper .report {
+      padding: 2em 3em;
+    }
+  }/*# sourceMappingURL=extrato.css.map */
